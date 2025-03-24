@@ -157,6 +157,7 @@ main{
     position: absolute;
     padding: 3rem 1rem;
     right: 0;
+    width: 60px;
 }
 
 #hamburger-btn:hover, #close-btn:hover{
@@ -197,10 +198,21 @@ main{
         position: absolute;
         padding: 3rem 1rem;
         left: 0;
+        width: 60px;
+    }
+
+    .hero-image>img{
+        position: absolute;
+        z-index: -1;
+        top: 100px;
+        left: 1rem;
+        width: 130vw;
     }
 
     .link-list{
+        box-shadow: 0 5px 5px var(--DarkGrayishBlue);
         top: -250px;
+        transition: 0.5s ease;
         padding: 2rem;
         position: relative;
         height: auto;
@@ -216,5 +228,36 @@ main{
 
     .linkMobile{
         top: 5rem;
+    }
+
+    .hero-content{
+        width: 85vw;
+        margin-top: 5rem;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .hero-content>h1{
+        font-size: 30pt;
+        width: 100%;
+    }
+
+    .hero-content>p{
+        font-size: 18pt;
+        width: 90%;
+    }
+
+    .button-submit>p{
+        font-size: 10pt;
+        width: 100%;
+    }
+    .button-submit>button{
+        width: 100%;
+    }
+    .button-submit{
+        width: 100%;
+        margin-top: 2rem;
     }
 }
