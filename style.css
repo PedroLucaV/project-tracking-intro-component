@@ -108,7 +108,8 @@ main{
 
 .hero-content>h1{
     text-transform: uppercase;
-    font-size: 54pt;
+    width: 90%;
+    font-size: 52pt;
 }
 
 .hero-content>p{
@@ -149,4 +150,71 @@ main{
 .button-submit>button:hover{
     opacity: 75%;
     cursor: pointer;
+}
+
+#hamburger-btn, #close-btn{
+    display: none;
+    position: absolute;
+    padding: 3rem 1rem;
+    right: 0;
+}
+
+#hamburger-btn:hover, #close-btn:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1190px) {
+    header{
+        padding-right: 3rem;
+    }
+
+    .link-list{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header{
+        padding: 0;
+        justify-content: center;
+    }
+
+    header>img{
+        position: absolute;
+        padding: 3rem 1rem;
+        left: 0;
+    }
+
+    .link-list{
+        top: -250px;
+        padding: 2rem;
+        position: relative;
+        height: auto;
+        gap: 1rem;
+        width: 80vw;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    #hamburger-btn{
+        display: block;
+    }
+
+    .linkMobile{
+        top: 5rem;
+    }
 }

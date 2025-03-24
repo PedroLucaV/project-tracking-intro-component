@@ -13,13 +13,17 @@
   </div>
   <header>
     <img src="./images/logo.svg" alt="logo">
-    <ul class="link-list">
-      <li><a href="#">Product</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><span>.</span></li>
-      <li><a class="login" href="#">Login</a></li>
-    </ul>
+    <div>
+      <img src="./images/icon-close.svg" id="close-btn" alt="">
+      <img src="./images/icon-hamburger.svg" id="hamburger-btn" alt="">
+      <ul class="link-list">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><span>.</span></li>
+        <li><a class="login" href="#">Login</a></li>
+      </ul>
+    </div>
   </header>
 
   <main>
@@ -37,5 +41,23 @@
       </div>
     </div>
   </main>
+
+  <script>
+    const linkMenu = document.querySelector('.link-list');
+    const hambBtn = document.querySelector('#hamburger-btn');
+    const closeBtn = document.querySelector('#close-btn');
+
+    hambBtn.addEventListener('click', () => {
+      closeBtn.style.display = 'block';
+      linkMenu.classList.add("linkMobile");
+      hambBtn.style.display = 'none';
+    })
+
+    closeBtn.addEventListener('click', () => {
+      hambBtn.style.display = 'block';
+      linkMenu.classList.remove("linkMobile");
+      closeBtn.style.display = 'none';
+    })
+  </script>
 </body>
 </html>
