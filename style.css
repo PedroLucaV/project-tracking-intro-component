@@ -22,7 +22,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 8rem;
 }
 
 .deco-container{
@@ -36,14 +36,14 @@ body{
 }
 
 header{
-    padding: 3rem 5rem;
+    padding: 3rem 7rem;
     display: flex;
     justify-content: space-between;
 }
 
 .link-list{
     display: flex;
-    gap: 4rem;
+    gap: 3.5rem;
     align-items: center;
 }
 
@@ -72,6 +72,7 @@ header{
 main{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     flex-direction: row-reverse;
 }
 
@@ -80,7 +81,8 @@ main{
     left: 80px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-around;
+    width: 45%;
 }
 
 .lil-text{
@@ -99,13 +101,14 @@ main{
     background-color: var(--VeryDarkBlue);
     border-radius: 50px;
     padding: 2px 15px;
+    font-weight: 700;
     text-align: center;
     color: var(--LightGrayishBlue);
 }
 
 .hero-content>h1{
     text-transform: uppercase;
-    font-size: 48pt;
+    font-size: 54pt;
 }
 
 .hero-content>p{
@@ -113,24 +116,22 @@ main{
     font-size: 20pt;
 }
 
-.hero-image>img{
-    position: relative;
-    left: 250px;
+.hero-image{
+    width: 45%;
 }
 
 .button-submit{
-    margin-top: 1rem;
+    margin-top: 4rem;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
 .button-submit>p{
-    font-weight: 200;
+    font-weight: 400;
     color: var(--GrayishBlue);
     font-family: 'Barlow';
     text-transform: uppercase;
-    
 }
 
 .button-submit>button{
@@ -139,10 +140,13 @@ main{
     color: var(--LightGrayishBlue);
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 14pt;
     border-radius: 5px;
-    padding: 0.5rem 1.5rem;
+    width: 200px;
+    height: 50px;
 }
 
 .button-submit>button:hover{
     opacity: 75%;
+    cursor: pointer;
 }
