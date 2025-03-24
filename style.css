@@ -18,7 +18,6 @@
 
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -167,7 +166,7 @@ main{
 
 @media screen and (max-width: 1190px) {
     header{
-        padding-right: 2rem;
+        padding-right: 3rem;
     }
 
     .link-list{
@@ -175,9 +174,10 @@ main{
         gap: 2rem;
         align-items: center;
     }
-
-    .hero-content>h1{
-        font-size: 42pt;
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -215,6 +215,7 @@ main{
         flex-direction: column;
         background-color: white;
     }
+    
 
     #hamburger-btn{
         display: block;
